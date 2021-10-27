@@ -44,5 +44,79 @@ img {
     height: auto;
 }
 
+.text-center{                       /*---------textคำว่า PARTNERS---------------*/
+    font-family: 'Bebas Neue', cursive;
+}
+.backhome{                          /*---------textคำว่า HOMEหน้าpartners---------------*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.home{                              /*---------จัดhomeให้อยู่center---------------*/
+    text-align: center;
+}
+.imgpartner{                        /*---------css รูปpartner---------------*/
+    border: 1px solid white;
+    float: left;
+    
+   
+}
+#txt1{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 80px;
+}
+#txt2{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 60px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 5px;
+}
+.dot{                               /*---------  .  ที่อยู่หลังคำว่าpartner---------------*/
+    color: #FF521B;
+}
+.box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px;
+    grid-gap: 30px;
+    width: 45vw;
+    margin-top: 10px;
+}
 
+@media screen and (max-width:1024px) {
 
+    .box {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:767px) {
+
+    .box {
+        grid-template-columns: auto;
+    }
+}
+
+#side{                                       /*--------- จัดให้ข้อความอยู่ทางขวาของรูป---------------*/
+    /* width: 50%; */
+    float: right;
+}
+.logo2{                                      /*--------- logo fullfense ตรงfooter---------------*/
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white{                                      /*--------- จัดให้ข้อความในtag a ให้เป็นสีขาว---------------*/
+    color: white;
+}
+.facebook{                                    /*--------- logo facebookตรงFOOTER---------------*/
+    width: 16px;
+    height: 16px;
+    
+}
+.page-footer{                                /*--------- จัดCSS ตรงส่วนfooter---------------*/   
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
