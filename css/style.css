@@ -12,24 +12,26 @@ body {
     color: white;
 }
 
-font1 {
+.font1 {
     font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.bwp-header {
-    margin-bottom: 0;
-    position: relative;
-    z-index: 9999;
+a {
+    text-decoration: none;
 }
-.header-wrapper{
-    position: relative;
-    padding: 24px 0;
-}
+  
 
-.header-left{
-    display: flex;
-    align-items: center;
-}
+.navbar-nav > .active > a {
+    color: #fd5015;
+    text-decoration: underline;
+  }
+  .nav-item > a:hover {
+    color: #fd5015;
+  }
 
 .navbar-brand img{
     max-height: 50px;
@@ -41,7 +43,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
 
 
