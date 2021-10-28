@@ -99,6 +99,11 @@ img {
     /* width: 50%; */
     float: right;
 }
+.bigger{
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
 .logo2{                                      /*--------- logo fullfense ตรงfooter---------------*/
     width: 60px;
     height: 60px;
