@@ -106,7 +106,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+.opacity{                                   /*-------------ลดopacity '>'--------------------*/ 
+    color: rgba(220, 224, 228, 0.8);
+}
 .white{                                      /*--------- จัดให้ข้อความในtag a ให้เป็นสีขาว---------------*/
     color: white;
 }
