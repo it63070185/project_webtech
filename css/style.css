@@ -70,6 +70,9 @@ img {
     font-family: "Bebas Neue", Sans-serif;
     letter-spacing: 5px;
 }
+#txt3{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 13px;
+}
 .dot{                               /*---------  .  ที่อยู่หลังคำว่าpartner---------------*/
     color: #FF521B;
 }
@@ -127,4 +130,60 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------------เริ่มcssหน้า Contact us------------------------ */
+.contact{                               /*--------- จัดตัวอักษร ตรงส่วนcontact---------------*/   
+    font-family: "Prompt", Sans-serif;
+    font-size: 13px;
+}
+.login-form.box-right {
+    background:#000000;;
+}
+.login-form input[type="text"],.login-form input[type="email"],.login-form input[type="password"] {         /*--------- จัดFORM---------------*/   
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: .6em 1em;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #fff;
+    -webkit-appearance: none;
+    display: block;
+    background: transparent; 
+	font-family: 'Raleway', sans-serif;
+}
+.required {                             /*--------- จัด'*' ตรงส่วนlabel---------------*/   
+    color: red;
+  }
+#button{                                /*--------- จัดปุ่มbutton "SEND"---------------*/   
+    background-color:#FF521B;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+label{
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.txt4{                              /*--------- จัดหัวข้อหน้าcontact---------------*/   
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 30px;
+}
+.txtemail{
+    font-family: "Prompt", Sans-serif;
+    font-weight: 600;
+}
+#letter{
+    border: 1px solid white;
+    padding: 10px 15px 15px 17px;
+    font-size: 25px;
+    display: block;
+    
+    width: 60px;
+    height: 60px;
+    margin-top: 28px;
 }
