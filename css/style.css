@@ -55,6 +55,8 @@ img {
 }
 .home{                              /*---------จัดhomeให้อยู่center---------------*/
     text-align: center;
+    font-family: 'Arial';
+    font-size: 13px;
 }
 .imgpartner{                        /*---------css รูปpartner---------------*/
     border: 1px solid white;
@@ -151,7 +153,8 @@ img {
     -webkit-appearance: none;
     display: block;
     background: transparent; 
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Arial';
+    text-align: left;
 }
 .required {                             /*--------- จัด'*' ตรงส่วนlabel---------------*/   
     color: red;
@@ -172,6 +175,7 @@ label{
 .txt4{                              /*--------- จัดหัวข้อหน้าcontact---------------*/   
     font-family: "Bebas Neue", Sans-serif;
     font-size: 30px;
+    text-align: left;
 }
 .txtemail{
     font-family: "Prompt", Sans-serif;
@@ -186,6 +190,9 @@ label{
     width: 60px;
     height: 60px;
     margin-top: 28px;
+}
+.left{
+    text-align: left;
 }
 /* News--------------------------------------------- */
 .page-title{
