@@ -80,10 +80,10 @@ img {
 }
 .box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:auto auto;
     margin: 10px 0px 10px 10px;
-    grid-gap: 25px;
-    width: 45vw;
+    grid-gap: 20px;
+    width: 40vw;
     margin-top: 10px;
 }
 
