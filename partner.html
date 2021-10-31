@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,235 +13,252 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
 
-	window.addEventListener("resize", function() {
-		"use strict"; window.location.reload(); 
-	});
+        window.addEventListener("resize", function () {
+            "use strict"; window.location.reload();
+        });
 
 
-	document.addEventListener("DOMContentLoaded", function(){
+        document.addEventListener("DOMContentLoaded", function () {
 
-		// make it as accordion for smaller screens
-		if (window.innerWidth > 992) {
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
 
-			document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
-				
-				everyitem.addEventListener('mouseover', function(e){
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
 
-					let el_link = this.querySelector('a[data-bs-toggle]');
+                    everyitem.addEventListener('mouseover', function (e) {
 
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.add('show');
-				 		nextEl.classList.add('show');
-					}
-					
-				});
-				everyitem.addEventListener('mouseleave', function(e){
-				 	let el_link = this.querySelector('a[data-bs-toggle]');
-					
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.remove('show');
-				 		nextEl.classList.remove('show');
-					}
-					
+                        let el_link = this.querySelector('a[data-bs-toggle]');
 
-				})
-			});
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
 
-		}
-		// end if innerWidth
-	}); 
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
+
+
+                    })
+                });
+
+            }
+            // end if innerWidth
+        });
 	// DOMContentLoaded  end
 
-</script>
+    </script>
 </head>
 
 <body>
-     <header class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-   <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
 
-  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-      <li class="nav-item active">
-        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
-          TEAMS
-        </a>
-        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="project/creators.html">Creators</a>
-          <a class="dropdown-item" href="project/pubg.html">PUBG</a>
-          <a class="dropdown-item" href="project/valorant.html">Valorant</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">SHOP</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-        <button class=btn>get</button>
-    </ul>
-    
-  </div>
-</nav>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
+                            TEAMS
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="project/creators.html">Creators</a>
+                            <a class="dropdown-item" href="project/pubg.html">PUBG</a>
+                            <a class="dropdown-item" href="project/valorant.html">Valorant</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class=btn>get</button>
+                </ul>
+
+            </div>
+        </nav>
     </header>
     <!-- <div class="container"> -->
-        <div class="justify-content-center">
+
+    <div class="justify-content-center">
+        <div class="page-title">
             <div class="row m-5">
                 <div class="col-12">
                     <br><br><br>
                     <h1 class="text-center" id="txt1">PARTNERS</h1>
                 </div>
-                
-                <br>
                 <div class="col-12 home">
                     <div class="blog">
                         <span><a class="home" href="index.html">Home</a> <span
-                            class="opacity">&emsp;></span>&emsp;Partners</span>
+                                class="opacity">&emsp;></span>&emsp;Partners</span>
                     </div>
                 </div>
             </div>
-                <div class="col-12">
-                    <br><br><br><br><br>
-                    <h2 class="text-center" id="txt2">PARTNERS<span class="dot">.</span></h2>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col-6">
+        </div>
+        <div class="col-12">
+            
+            <h2 class="text-center" id="txt2">PARTNERS<span class="dot">.</span></h2>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-6">
                 <div class="box">
-                    <a href="https://www.moochiepetfood.com/"><img class="imgpartner"src="img/partner1.png" alt=""></a><p id="side"><span class="bigger">MOOCHIE </span><br>Give Moochie ‘TO SAY I LOVE YOU’ Complete & Balanced Nutritious Pet Food, to help your pets lead happy, healthy lives.</p>
-                </div>
-                </div>
-                <div class="col-6">
-                    <div class="box" >
-                    <a href="https://thaicoconut.com/"><img class="imgpartner"src="img/partner4.png"style="margin-right:-8rem;" alt=""></a><p id="side"><span class="bigger">THAICOCO</span><br>Thai Coco “Craft with Heart” Coconut Products made in Thailand</p>
+                    <a href="https://www.moochiepetfood.com/"><img class="imgpartner" src="img/partner1.png" alt=""></a>
+                    <p id="side"><span class="bigger">MOOCHIE </span><br>Give Moochie ‘TO SAY I LOVE YOU’ Complete &
+                        Balanced Nutritious Pet Food, to help your pets lead happy, healthy lives.</p>
                 </div>
             </div>
             <div class="col-6">
                 <div class="box">
-                    <a href="https://www.coco-buri.com/th"><img class="imgpartner"src="img/partner2.png" alt=""></a><p id="side"><span class="bigger">COCOBURI</span><br>COCOBURI uses only Namhom Coconuts…recognized worldwide for their unique taste and aroma! Good scent… because our plantation is in Ratchaburi province.</p>
-                </div>
-                </div>
-                <div class="col-6">
-                <div class="box">
-                    <a href="https://m.facebook.com/Vertagearthailand/"><img class="imgpartner" style="margin-right:-23rem;"src="img/partner5.png" alt=""></a><p id="side"><span class="bigger">VERTAGEAR</span><br>Gaming Chairs Gaming Planet</p>
-                </div>
-                </div>
-                <div class="col-6">
-                <div class="box">
-                    <a href="https://thaiawesome.com/"><img class="imgpartner"src="img/partner3.png" alt=""></a><p id="side"><span class="bigger">THAIAWESOME</span><br>Crafted by heart, Loved by your pets Providing highest quality and natural source ingredients food to ensure your pet’s lifelong health and well-being</p>
+                    <a href="https://thaicoconut.com/"><img class="imgpartner" src="img/partner4.png"
+                            style="margin-right:-8rem;" alt=""></a>
+                    <p id="side"><span class="bigger">THAICOCO</span><br>Thai Coco “Craft with Heart” Coconut Products
+                        made in Thailand</p>
                 </div>
             </div>
+            <div class="col-6">
+                <div class="box">
+                    <a href="https://www.coco-buri.com/th"><img class="imgpartner" src="img/partner2.png" alt=""></a>
+                    <p id="side"><span class="bigger">COCOBURI</span><br>COCOBURI uses only Namhom Coconuts…recognized
+                        worldwide for their unique taste and aroma! Good scent… because our plantation is in Ratchaburi
+                        province.</p>
+                </div>
             </div>
+            <div class="col-6">
+                <div class="box">
+                    <a href="https://m.facebook.com/Vertagearthailand/"><img class="imgpartner"
+                            style="margin-right:-23rem;" src="img/partner5.png" alt=""></a>
+                    <p id="side"><span class="bigger">VERTAGEAR</span><br>Gaming Chairs Gaming Planet</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box">
+                    <a href="https://thaiawesome.com/"><img class="imgpartner" src="img/partner3.png" alt=""></a>
+                    <p id="side"><span class="bigger">THAIAWESOME</span><br>Crafted by heart, Loved by your pets
+                        Providing highest quality and natural source ingredients food to ensure your pet’s lifelong
+                        health and well-being</p>
+                </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <!-- Footer -->
-<footer class="page-footer pt-4">
+    <footer class="page-footer pt-4">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-        <div class="col-md-12 ">
-            <img class = "logo2"src="img/logo2.png" alt="">
-        </div>
-        <br><br><br><br><br>
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
 
-        <!-- Grid column -->
-        
-        <div class="col-md-3 ">
-  
-          <!-- Content -->
-          <!-- <h5 class="text-uppercase">Footer Content</h5> -->
-          <p>FULL SENSE Esports CO LTD</p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3 ">
-  
-          <!-- Links -->
-         
-          
-          <ul class="list-unstyled">
-            <li>
-              <a class="white"href="index.html">Home</a>
-            </li>
-            <li>
-              <a class="white"href="#!">About us</a>
-            </li>
-            <li>
-              <a class="white"href="#!">Teams</a>
-            </li>
-            
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3 ">
-  
-          <!-- Links -->
-         
-  
-          <ul class="list-unstyled">
-            <li>
-              <a class="white"href="#!">News</a>
-            </li>
-            <li>
-              <a class="white"href="#!">Partners</a>
-            </li>
-            <li>
-              <a class="white"href="#!">Contact us</a>
-            </li>
-            
-          </ul>
-          
-        </div>
-        <!-- Grid column -->
-        <div class="col-md-3 mt-md-0 mt-3">
-  
-            <!-- Content -->
-            <!-- <h5 class="text-uppercase">Footer Content</h5> -->
-            
-                <a class="white" href="https://www.facebook.com/fullsensesports"><img class = "facebook"src="img/facebook.png" alt="">FULL SENSE</a>
-    
-          </div>
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-md-12 ">
+                    <img class="logo2" src="img/logo2.png" alt="">
+                </div>
+                <br><br><br><br><br>
 
-  </footer>
-  <!-- Footer -->
+                <!-- Grid column -->
+
+                <div class="col-md-3 ">
+
+                    <!-- Content -->
+                    <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+                    <p>FULL SENSE Esports CO LTD</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3 ">
+
+                    <!-- Links -->
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="white" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#!">About us</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#!">Teams</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3 ">
+
+                    <!-- Links -->
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="white" href="#!">News</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#!">Partners</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#!">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-3 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+
+                    <a class="white" href="https://www.facebook.com/fullsensesports"><img class="facebook"
+                            src="img/facebook.png" alt="">FULL SENSE</a>
+
+                </div>
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>
