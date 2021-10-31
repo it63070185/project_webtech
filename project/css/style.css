@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.font1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+  
+
+.navbar-nav > .active > a {
+    color: #fd5015;
+    text-decoration: underline;
+  }
+  .nav-item > a:hover {
+    color: #fd5015;
+  }
+
+.navbar-brand img{
+    max-height: 50px;
+    width: auto;
+}
+img {
+    border: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{                       /*---------textคำว่า PARTNERS---------------*/
+    font-family: 'Bebas Neue', cursive;
+}
+.backhome{                          /*---------textคำว่า HOMEหน้าpartners---------------*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.home{                              /*---------จัดhomeให้อยู่center---------------*/
+    text-align: center;
+}
+.imgpartner{                        /*---------css รูปpartner---------------*/
+    border: 1px solid white;
+    float: left;
+    
+   
+}
+#txt1{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 80px;
+}
+#txt2{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 60px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 5px;
+}
+#txt3{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 13px;
+}
+.dot{                               /*---------  .  ที่อยู่หลังคำว่าpartner---------------*/
+    color: #FF521B;
+}
+.box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px 0px 10px 10px;
+    grid-gap: 25px;
+    width: 45vw;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1024px) {
+
+    .box {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:767px) {
+
+    .box {
+        grid-template-columns: auto;
+    }
+}
+
+#side{                                       /*--------- จัดให้ข้อความอยู่ทางขวาของรูป---------------*/
+    width: 70%;
+    float: right;
+    font-size: 13px;
+}
+.bigger{                                     /*--------- จัดหัวเรื่องข้อความให้ขนาดใหญ่กว่ารายละเอียด---------------*/
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+.logo2{                                      /*--------- logo fullfense ตรงfooter---------------*/
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.opacity{                                   /*-------------ลดopacity '>'--------------------*/ 
+    color: rgba(220, 224, 228, 0.8);
+}
+.white{                                      /*--------- จัดให้ข้อความในtag a ให้เป็นสีขาว---------------*/
+    color: white;
+}
+.facebook{                                    /*--------- logo facebookตรงFOOTER---------------*/
+    width: 16px;
+    height: 16px;
+    
+}
+.page-footer{                                /*--------- จัดCSS ตรงส่วนfooter---------------*/   
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------------เริ่มcssหน้า Contact us------------------------ */
+.contact{                               /*--------- จัดตัวอักษร ตรงส่วนcontact---------------*/   
+    font-family: "Prompt", Sans-serif;
+    font-size: 13px;
+}
+.login-form.box-right {
+    background:#000000;;
+}
+.login-form input[type="text"],.login-form input[type="email"],.login-form input[type="password"] {         /*--------- จัดFORM---------------*/   
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: .6em 1em;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #fff;
+    -webkit-appearance: none;
+    display: block;
+    background: transparent; 
+	font-family: 'Raleway', sans-serif;
+}
+.required {                             /*--------- จัด'*' ตรงส่วนlabel---------------*/   
+    color: red;
+  }
+#button{                                /*--------- จัดปุ่มbutton "SEND"---------------*/   
+    background-color:#FF521B;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+label{
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.txt4{                              /*--------- จัดหัวข้อหน้าcontact---------------*/   
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 30px;
+}
+.txtemail{
+    font-family: "Prompt", Sans-serif;
+    font-weight: 600;
+}
+#letter{
+    border: 1px solid white;
+    padding: 10px 15px 15px 17px;
+    font-size: 25px;
+    display: block;
+    
+    width: 60px;
+    height: 60px;
+    margin-top: 28px;
+}
+/* News--------------------------------------------- */
+.page-title{
+    background: url(../img/bg-left.png) right -122px no-repeat, url(../img/bg-right.png) left -122px no-repeat;
+    padding-top: 60px;
+    padding-bottom: 170px;
+}
+.container{
+    text-align: center;
+}
+.posts{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    margin: 10px;
+}
+.blog{
+    font-family: 'Arial';
+    font-size: 13px;
+}
+.blog .home{
+    color: #fff;
+}
+.content{
+    margin: 15px;
+    padding-bottom: 60px;
+}
+.news1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #fff;
+}
+.uncate{
+    font-family: 'Arial';
+    font-size: 11px;
+    color:#fff;
+}
+.logo2{
+    max-width: 180px;
+    max-height: 114px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.page-footer p, a{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/* th */
+/* .float {
+    display: flex;
+} */
+span {
+    color: #FF521B;
+}
