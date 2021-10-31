@@ -81,9 +81,9 @@ img {
 .box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
     display: grid;
     grid-template-columns:auto auto;
-    margin: 10px 0px 10px 10px;
+    margin: 10px 0px 10px 40px;
     grid-gap: 20px;
-    width: 40vw;
+    width: 45vw;
     margin-top: 10px;
 }
 
@@ -241,17 +241,3 @@ label{
     font-size: 13px;
 }
 
-.zoom {
-    padding: 50px;
-    background-color: green;
-    transition: transform .8s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    -ms-transform: scale(1.05); /* IE 9 /
-    -webkit-transform: scale(1.05); / Safari 3-8 */
-    transform: scale(1.05); 
-  }
