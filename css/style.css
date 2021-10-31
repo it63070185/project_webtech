@@ -81,9 +81,9 @@ img {
 .box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
     display: grid;
     grid-template-columns:auto auto;
-    margin: 10px 0px 10px 10px;
+    margin: 10px 0px 10px 40px;
     grid-gap: 20px;
-    width: 40vw;
+    width: 45vw;
     margin-top: 10px;
 }
 
@@ -240,6 +240,9 @@ label{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
+<<<<<<< HEAD
+
+=======
 /* teams------------------------------------------------------------------------------------ */
 #teams{
     font-family: 'Arial';
@@ -248,3 +251,4 @@ label{
 #teams .home{
     color: #fff;
 }
+>>>>>>> 8a2f1c7d73ef68888a2b3c8d39fc4ab1fa643896
