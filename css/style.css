@@ -339,4 +339,13 @@ label{
     font-size: 14px;
     font-family: "Prompt", Sans-serif;
     color: #fff;
+    /* text-decoration: none; */
+}
+
+.teambox:hover {
+    border :solid 2px #ff3535;
+}
+
+a.team:hover{
+    text-decoration: none;
 }
