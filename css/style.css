@@ -283,3 +283,22 @@ label{
     margin-right: 5px;
     margin-bottom: 1em;
 }
+.txt-news2 hr{
+    background-color: #fff;
+}
+
+.txt-news2 .avatar{
+    float: left; 
+    margin: 0em 1em 1em 0em;
+}
+
+.txt-news2 .reply{
+    float: right; 
+    margin: 0em 0em 0em 0em;
+}
+
+.txt-news2 .button{
+    background-color: #fff; 
+    padding: 1em; 
+    margin-top: 2em;
+}
