@@ -130,11 +130,12 @@ img {
     font-weight: 400;
 }
 .logo2{                                      /*--------- logo fullfense ตรงfooter---------------*/
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 63px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .opacity{                                   /*-------------ลดopacity '>'--------------------*/ 
     color: rgba(220, 224, 228, 0.8);
@@ -143,9 +144,13 @@ img {
     color: white;
 }
 .facebook{                                    /*--------- logo facebookตรงFOOTER---------------*/
-    width: 16px;
-    height: 16px;
-    
+    font-size: 15px;
+}
+.hi{
+    line-height: 2;
+}
+.botom{
+    margin-bottom: 25px;
 }
 .page-footer{                                /*--------- จัดCSS ตรงส่วนfooter---------------*/   
     font-family: 'Roboto', sans-serif;
@@ -247,12 +252,6 @@ img {
     font-family: 'Arial';
     font-size: 11px;
     color:#fff;
-}
-.logo2{
-    max-width: 180px;
-    max-height: 114px;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
 }
 .page-footer p, a{
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -362,4 +361,25 @@ img {
     letter-spacing: 2px;
     -webkit-text-fill-color:transparent;
     -webkit-text-stroke-width:2px;
+}
+
+/* team */
+.teambox {
+
+    border: solid 2px #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Prompt", Sans-serif;
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+.teambox:hover {
+    border :solid 2px #ff3535;
+}
+
+a.team:hover{
+    text-decoration: none;
 }

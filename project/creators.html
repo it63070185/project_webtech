@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 	window.addEventListener("resize", function() {
 		"use strict"; window.location.reload(); 
 	});
@@ -54,99 +57,173 @@
 		}
 		// end if innerWidth
 	}); 
+
+        window.addEventListener("resize", function () {
+            "use strict"; window.location.reload();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
+
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
+
+                    everyitem.addEventListener('mouseover', function (e) {
+
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
+
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
+
+
+                    })
+                });
+
+            }
+            // end if innerWidth
+        });
 	// DOMContentLoaded  end
 
-</script>
+    </script>
 
 </head>
 
 <body>
-     <header class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-   <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="../img/Full_Sense_logo.png" alt=""></a>
 
-  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
-          TEAMS
-        </a>
-        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="project/creators.html">Creators</a>
-          <a class="dropdown-item" href="project/pubg.html">PUBG</a>
-          <a class="dropdown-item" href="project/valorant.html">Valorant</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">SHOP</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-        <button class=btn>get</button>
-    </ul>
-    
-  </div>
-</nav>
-    </header><br><br>
-    <div class="container-fluid">
-        <div class="justify-content-center">
-            <div class="page-title">
-                <div class="row m-5">
-                    <div class="col-12">
-                        <br><br><br>
-                        <h1 class="text-center" id="txt1">CREATORS</h1>
-                    </div>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
+                            TEAMS
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="project/creators.html">Creators</a>
+                            <a class="dropdown-item" href="project/pubg.html">PUBG</a>
+                            <a class="dropdown-item" href="project/valorant.html">Valorant</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class=btn>get</button>
+                </ul>
 
-                    <br>
-                    <div class="col-12 home">
-                        <div class="blog">
-                            <span><a class="home" href="index.html">Home</a> <span
-                                    class="opacity">&emsp;></span>&emsp;Creators</span>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="justify-content-center">
+                <div class="page-title">
+                    <div class="row m-1">
+                        <div class="col-12">
+                            <br><br><br>
+                            <h1 class="text-center" id="txt1">CREATORS</h1>
+                        </div>
+
+                        <br>
+                        <div class="col-12 home">
+                            <div class="blog">
+                                <span><a class="home" href="index.html">Home</a> <span
+                                        class="opacity">&emsp;></span>&emsp;Creators</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div><br><br>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <div class="">
-                    <h2 class="">CREATORS<span class="dot"> . </span></h2>
-                </div>
+            <div class="col-12 text-center" id="textspace">
+                <p>CREATORS</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <h2 class="">PUBG<span class="dot"> . </span></h2>
+            <div class="col-3 p-2">
+                <img src="../img/MintAuka-1.jpg" alt="">
+                <a href="https://www.twitch.tv/mintauka" class="team">
+                    <div class="teambox my-3">TWITCH</div>
+                </a>
+                <a href="https://www.facebook.com/mintauka" class="team">
+                    <div class="teambox my-3">FACEBOOK</div>
+                </a>
             </div>
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <h2 class="">VALORANT<span class="dot"> . </span></h2>
+            <div class="col-3 p-2">
+                <img src="../img/BOOMBURAPA-scaled.jpg" alt="">
+                <a href="https://www.twitch.tv/boomburapa" class="team">
+                    <div class="teambox my-3">TWITCH</div>
+                </a>
+                <a href="https://www.facebook.com/Boomburapa-112036990933185" class="team">
+                    <div class="teambox my-3">FACEBOOK</div>
+                </a>
+            </div>
+            <div class="col-3 p-2">
+                <img src="../img/nyamnyamnm-scaled.jpg" alt="">
+                <a href="https://www.twitch.tv/nyamnyamnm" class="team">
+                    <div class="teambox my-3">TWITCH</div>
+                </a>
+                <!-- <a href=""> -->
+                    <div class="teambox my-3">FACEBOOK</div>
+                <!-- </a> -->
+            </div>
+            <div class="col-3 p-2">
+                <img src="../img/Voicezan-scaled.jpg" alt="">
+                <a href="https://www.twitch.tv/voicezan" class="team">
+                    <div class="teambox my-3">TWITCH</div>
+                </a>
+                <a href="https://www.facebook.com/voicezanofficial" class="team">
+                    <div class="teambox my-3">FACEBOOK</div>
+                </a>
+            </div>
+            <div class="col-3 p-2">
+                <img src="../img/Fixky.jpg" alt="">
+                <a href="https://www.twitch.tv/fixky" class="team">
+                    <div class="teambox my-3">TWITCH</div>
+                </a>
+                <!-- <a href=""> -->
+                    <div class="teambox my-3">FACEBOOK</div>
+                <!-- </a> -->
             </div>
         </div><br><br>
         <div class="row">
             <div class="col-4 p-1">
-                
+
                 <a href="creators.html"><img src="project/pic/creators.png" alt=""></a>
-            
+
             </div>
 
             <div class="col-4 p-1">
@@ -156,91 +233,89 @@
                 <a href="valolant.html"><img src="project/pic/valorant.jpg" alt=""></a>
             </div>
         </div><br>
-        <div class="row">
-            <div class="col">
-                text-slide ทำไม่เป็น TT
+
+        <footer class="page-footer pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-12 text-center">
+                        <img src="../img/logo2.png" alt="">
+                    </div> -->
+
+                    <div class="col-md-3 ">
+
+                        <!-- Content -->
+                        <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+                        <p>FULL SENSE Esports CO LTD</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3 ">
+
+                        <!-- Links -->
+
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="white" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#!">About us</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#!">Teams</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3 ">
+
+                        <!-- Links -->
+
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="white" href="#!">News</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#!">Partners</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#!">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+
+                        <a class="white" href="https://www.facebook.com/fullsensesports"><img class="facebook"
+                                src="img/facebook.png" alt="">FULL SENSE</a>
+
+                    </div>
+                </div>
+                <!-- Grid row -->
+
             </div>
-        </div><br><br><br>
-    </div>
-    <footer class="page-footer pt-4">
+            <!-- Footer Links -->
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-                <!-- Grid column -->
-
-                <div class="col-md-3 ">
-
-                    <!-- Content -->
-                    <!-- <h5 class="text-uppercase">Footer Content</h5> -->
-                    <p>FULL SENSE Esports CO LTD</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3 ">
-
-                    <!-- Links -->
-
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="white" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="white" href="#!">About us</a>
-                        </li>
-                        <li>
-                            <a class="white" href="#!">Teams</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3 ">
-
-                    <!-- Links -->
-
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="white" href="#!">News</a>
-                        </li>
-                        <li>
-                            <a class="white" href="#!">Partners</a>
-                        </li>
-                        <li>
-                            <a class="white" href="#!">Contact us</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-3 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <!-- <h5 class="text-uppercase">Footer Content</h5> -->
-
-                    <a class="white" href="https://www.facebook.com/fullsensesports"><img class="facebook"
-                            src="img/facebook.png" alt="">FULL SENSE</a>
-
-                </div>
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-    </footer>
+        </footer>
 
 </body>
 
