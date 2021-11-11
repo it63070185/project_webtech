@@ -64,6 +64,10 @@ img {
     
    
 }
+#thaiawesome{
+    width: 300px;
+    /* height: 100%; */
+}
 #txt1{                              /*---------textคำว่า PARTNERS---------------*/
     font-size: 80px;
 }
@@ -301,4 +305,11 @@ label{
     background-color: #fff; 
     padding: 1em; 
     margin-top: 2em;
+}
+#textspace{
+    font-family:"Bebas Neue", Sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke-width:2px;
 }
