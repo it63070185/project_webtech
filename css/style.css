@@ -61,8 +61,8 @@ img {
 .imgpartner{                        /*---------css รูปpartner---------------*/
     border: 1px solid white;
     float: left;
-    
-   
+    max-width:fit-content;
+   height:250px;
 }
 #thaiawesome{
     width: 300px;
@@ -85,12 +85,15 @@ img {
 .box {                               /*---------กล่องที่ครอบpartnerกับข้อความ---------------*/
     display: grid;
     grid-template-columns:auto auto;
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0px 10px 50px;
     grid-gap: 20px;
     width: 45vw;
     margin-top: 10px;
+    
 }
-
+.overx{
+    overflow-x: hidden;
+}
 @media screen and (max-width:1024px) {
 
     .box {
@@ -105,6 +108,18 @@ img {
 }
 
 #side{                                       /*--------- จัดให้ข้อความอยู่ทางขวาของรูป---------------*/
+    width: 70%;
+    float: right;
+    font-size: 13px;
+}
+#side2{
+    width: 70%;
+    float: right;
+    font-size: 13px;
+    margin-left: 85px;
+}
+#side3{
+    margin-left: 110px;
     width: 70%;
     float: right;
     font-size: 13px;
