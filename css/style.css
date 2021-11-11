@@ -186,7 +186,7 @@ img {
     font-family: 'Bebas Neue', cursive;
     
 }
-label{
+.label{
     letter-spacing: 3px;
     font-size: 11px;
     text-transform: uppercase;
@@ -295,12 +295,15 @@ label{
     font-family: Arial;
 }
 .i-social img{
-    background-color: #fff; 
-    width:2vw; 
-    border-radius: 100%; 
-    border: 0.5px solid #fff;
+    padding: 5px;
+    max-width:30px; 
+    border-radius: 50%; 
+    border: 1px solid #fff;
     margin-right: 5px;
     margin-bottom: 1em;
+}
+.i-social img:hover{
+    border: 1px solid #000;
 }
 .txt-news2 hr{
     background-color: #fff;
@@ -316,10 +319,42 @@ label{
     margin: 0em 0em 0em 0em;
 }
 
-.txt-news2 .button{
+.txt-news2 button{
     background-color: #fff; 
+    color: #000;
     padding: 1em; 
     margin-top: 2em;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+    border: 0;
+}
+.txt-news2 button:hover{
+    color: #fff;
+    background-color: #000;
+}
+.comment{
+    padding-bottom: 1em;
+}
+.comment h3, h4{
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    margin: 1em;
+    color: #fff;
+    text-align: center;
+}
+.comment span{
+    font-family:"Bebas Neue", cursive;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.comment p{
+    font-family: arial;
+    font-size: 13px;
+}
+.leave{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 #textspace{
     font-family:"Bebas Neue", Sans-serif;
