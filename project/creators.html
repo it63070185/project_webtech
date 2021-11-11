@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,96 +16,97 @@
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript">
 
-	window.addEventListener("resize", function() {
-		"use strict"; window.location.reload(); 
-	});
+        window.addEventListener("resize", function () {
+            "use strict"; window.location.reload();
+        });
 
 
-	document.addEventListener("DOMContentLoaded", function(){
+        document.addEventListener("DOMContentLoaded", function () {
 
-		// make it as accordion for smaller screens
-		if (window.innerWidth > 992) {
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
 
-			document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
-				
-				everyitem.addEventListener('mouseover', function(e){
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
 
-					let el_link = this.querySelector('a[data-bs-toggle]');
+                    everyitem.addEventListener('mouseover', function (e) {
 
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.add('show');
-				 		nextEl.classList.add('show');
-					}
-					
-				});
-				everyitem.addEventListener('mouseleave', function(e){
-				 	let el_link = this.querySelector('a[data-bs-toggle]');
-					
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.remove('show');
-				 		nextEl.classList.remove('show');
-					}
-					
+                        let el_link = this.querySelector('a[data-bs-toggle]');
 
-				})
-			});
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
 
-		}
-		// end if innerWidth
-	}); 
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
+
+
+                    })
+                });
+
+            }
+            // end if innerWidth
+        });
 	// DOMContentLoaded  end
 
-</script>
+    </script>
 
 </head>
 
 <body>
-     <header class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-   <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
 
-  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
-          TEAMS
-        </a>
-        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="project/creators.html">Creators</a>
-          <a class="dropdown-item" href="project/pubg.html">PUBG</a>
-          <a class="dropdown-item" href="project/valorant.html">Valorant</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="#">SHOP</a>
-      </li>
-      <li class="nav-item">
-        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-        <button class=btn>get</button>
-    </ul>
-    
-  </div>
-</nav>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
+                            TEAMS
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="project/creators.html">Creators</a>
+                            <a class="dropdown-item" href="project/pubg.html">PUBG</a>
+                            <a class="dropdown-item" href="project/valorant.html">Valorant</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class=btn>get</button>
+                </ul>
+
+            </div>
+        </nav>
     </header><br><br>
     <div class="container-fluid">
         <div class="justify-content-center">
@@ -125,42 +127,54 @@
                 </div>
             </div>
         </div>
-        </div><br><br>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <div class="">
-                    <h2 class="">CREATORS<span class="dot"> . </span></h2>
-                </div>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <h2 class="">PUBG<span class="dot"> . </span></h2>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-1float">
-                <h2 class="">VALORANT<span class="dot"> . </span></h2>
-            </div>
-        </div><br><br>
-        <div class="row">
-            <div class="col-4 p-1">
-                
-                <a href="creators.html"><img src="project/pic/creators.png" alt=""></a>
-            
-            </div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-12 text-center"><p>CREATORS</p></div>
+        <div class="col-3 p-2">
+            <img src="../img/MintAuka-1.jpg" alt="">
+            <a href="https://www.twitch.tv/mintauka"><div class="teambox my-3">TWITCH</div></a>
+            <a href="https://www.facebook.com/mintauka"><div class="teambox my-3">FACEBOOK</div></a>
+        </div>
+        <div class="col-3 p-2">
+            <img src="../img/BOOMBURAPA-scaled.jpg" alt="">
+            <a href="https://www.twitch.tv/boomburapa"><div class="teambox my-3">TWITCH</div></a>
+            <a href="https://www.facebook.com/Boomburapa-112036990933185"><div class="teambox my-3">FACEBOOK</div></a>
+        </div>
+        <div class="col-3 p-2">
+            <img src="../img/nyamnyamnm-scaled.jpg" alt="">
+            <a href="https://www.twitch.tv/nyamnyamnm"><div class="teambox my-3">TWITCH</div></a>
+            <a href=""><div class="teambox my-3">FACEBOOK</div></a>
+        </div>
+        <div class="col-3 p-2">
+            <img src="../img/Voicezan-scaled.jpg" alt="">
+            <a href="https://www.twitch.tv/voicezan"><div class="teambox my-3">TWITCH</div></a>
+            <a href="https://www.facebook.com/voicezanofficial"><div class="teambox my-3">FACEBOOK</div></a>
+        </div>
+        <div class="col-3 p-2">
+            <img src="../img/Fixky.jpg" alt="">
+            <a href="https://www.twitch.tv/fixky"><div class="teambox my-3">TWITCH</div></a>
+            <a href=""><div class="teambox my-3">FACEBOOK</div></a>
+        </div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-4 p-1">
 
-            <div class="col-4 p-1">
-                <a href="pubg.html"><img src="project/pic/pubg.jpg" alt=""></a>
-            </div>
-            <div class="col-4 p-1">
-                <a href="valolant.html"><img src="project/pic/valorant.jpg" alt=""></a>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col">
-                text-slide ทำไม่เป็น TT
-            </div>
-        </div><br><br><br>
+            <a href="creators.html"><img src="project/pic/creators.png" alt=""></a>
+
+        </div>
+
+        <div class="col-4 p-1">
+            <a href="pubg.html"><img src="project/pic/pubg.jpg" alt=""></a>
+        </div>
+        <div class="col-4 p-1">
+            <a href="valolant.html"><img src="project/pic/valorant.jpg" alt=""></a>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            text-slide ทำไม่เป็น TT
+        </div>
+    </div><br><br><br>
     </div>
     <footer class="page-footer pt-4">
 

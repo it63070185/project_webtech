@@ -313,3 +313,15 @@ label{
     -webkit-text-fill-color:transparent;
     -webkit-text-stroke-width:2px;
 }
+
+/* team */
+.teambox {
+
+    border: solid 2px #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Prompt", Sans-serif;
+    color: #fff;
+}
