@@ -434,9 +434,17 @@ a.team:hover{
     border-radius: 1.5px; 
     margin-left: 2px;
 }
+.column:hover{
+    background-color: #FF521B;
+}
+/* #col-bt:active{
+    background-color:rgb(255, 0, 0);
+} */
+
 #row-box{
     margin-bottom: 2px;
 }
+
 .list-icon{
     font-size: 25px;
 }
