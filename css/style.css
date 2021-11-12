@@ -19,7 +19,30 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+section{
+    margin-bottom: 7%;
+}
+/* indexbg */
+.box-in {
+    height: 620px;
+    position: relative;
+    background: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+}
 
+#txt-in{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 80px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 5px;
+}
+#txt-inpara{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 16px;
+    font-family: "Prompt", Sans-serif;
+    color: #fff;
+    font-weight: 300;
+    line-height: 23px;
+}
 a {
     text-decoration: none;
 }
