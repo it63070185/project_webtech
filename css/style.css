@@ -450,3 +450,23 @@ a.team:hover{
     /* padding-left:0; */
     /* background-size: 495px 600px; */
 }
+/* -----------shop-2--------------------------------- */
+#imgpro1{
+    background-color: white; 
+    width: 45vw;
+    height: 45vw;
+    padding: 1em; 
+    text-align: center;
+}
+#imgpro2{
+    background-color: white; 
+    width: 50vw;
+    height: 45vw;
+    padding: 1em; 
+    text-align: center;
+}
+.txt-imgpro{
+    max-width: 45vw;
+    padding: 1em 1em 1em 0em;
+    color:#fff;
+}
