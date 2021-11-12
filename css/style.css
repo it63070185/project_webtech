@@ -253,7 +253,7 @@ img {
 }
 .posts{
     font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
+    font-size: 80px;
     margin: 10px;
 }
 .blog{
@@ -406,4 +406,14 @@ img {
 
 a.team:hover{
     text-decoration: none;
+}
+/* ---------------shop------------------------- */
+#shop-box{
+    max-width: 95vw;
+}
+#shop-page{
+    padding-bottom: 3em;
+}
+.img-fill{
+    max-width: 1.5em;
 }
