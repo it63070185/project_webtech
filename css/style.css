@@ -176,6 +176,9 @@ img {
 .botom{
     margin-bottom: 25px;
 }
+.botop{
+    margin-top: 100px;
+}
 .page-footer{                                /*--------- จัดCSS ตรงส่วนfooter---------------*/   
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -446,7 +449,33 @@ a.team:hover{
 }
 #bg-img1{
     background-color:white;
-    background-size: cover;
-    /* padding-left:0; */
-    /* background-size: 495px 600px; */
+}
+.no-pad{
+    padding-bottom: -20px;
+}
+#padding-r{
+    padding: 0em 1em 0em 0em;
+}
+.frames{
+    border:30px solid white;
+}
+.frames2{
+    border:25px solid white;
+    padding-bottom: 24.6px;
+}
+.color-full{
+    color: #a3a3a3;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', cursive;
+    font-size:13px;
+}
+.text-product{
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-size:13px;
+}
+.text-product2{
+    font-weight: 700;
+    font-family: 'Arial';
+    font-size:14px;
 }
