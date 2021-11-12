@@ -187,6 +187,12 @@ img {
     font-family: "Prompt", Sans-serif;
     font-size: 13px;
 }
+.font2{
+    font-family: 'Arial';
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
 .login-form.box-right {
     background:#000000;;
 }
@@ -228,6 +234,7 @@ img {
 .txtemail{
     font-family: "Prompt", Sans-serif;
     font-weight: 600;
+    font-size: 13px;
 }
 #letter{
     border: 1px solid white;
