@@ -502,3 +502,6 @@ a.team:hover{
     font-family: 'Arial';
     font-size:14px;
 }
+.color-full:hover, .text-product:hover{
+    color:#FF521B;
+}
