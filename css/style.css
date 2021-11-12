@@ -444,3 +444,9 @@ a.team:hover{
 #col-bt-bt{
     padding: 1.25em 0em 0em 1em;
 }
+#bg-img1{
+    background-color:white;
+    background-size: cover;
+    /* padding-left:0; */
+    /* background-size: 495px 600px; */
+}
