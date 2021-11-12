@@ -19,7 +19,30 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+section{
+    margin-bottom: 7%;
+}
+/* indexbg */
+.box-in {
+    height: 620px;
+    position: relative;
+    background: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+}
 
+#txt-in{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 80px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 5px;
+}
+#txt-inpara{                              /*---------textคำว่า PARTNERS---------------*/
+    font-size: 16px;
+    font-family: "Prompt", Sans-serif;
+    color: #fff;
+    font-weight: 300;
+    line-height: 23px;
+}
 a {
     text-decoration: none;
 }
@@ -130,11 +153,12 @@ img {
     font-weight: 400;
 }
 .logo2{                                      /*--------- logo fullfense ตรงfooter---------------*/
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 63px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .opacity{                                   /*-------------ลดopacity '>'--------------------*/ 
     color: rgba(220, 224, 228, 0.8);
@@ -143,9 +167,14 @@ img {
     color: white;
 }
 .facebook{                                    /*--------- logo facebookตรงFOOTER---------------*/
-    width: 16px;
-    height: 16px;
-    
+    font-size: 15px;
+    transform: translateY(-13%);
+}
+.hi{
+    line-height: 2;
+}
+.botom{
+    margin-bottom: 25px;
 }
 .page-footer{                                /*--------- จัดCSS ตรงส่วนfooter---------------*/   
     font-family: 'Roboto', sans-serif;
@@ -157,6 +186,12 @@ img {
 .contact{                               /*--------- จัดตัวอักษร ตรงส่วนcontact---------------*/   
     font-family: "Prompt", Sans-serif;
     font-size: 13px;
+}
+.font2{
+    font-family: 'Arial';
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
 }
 .login-form.box-right {
     background:#000000;;
@@ -186,7 +221,7 @@ img {
     font-family: 'Bebas Neue', cursive;
     
 }
-label{
+.label{
     letter-spacing: 3px;
     font-size: 11px;
     text-transform: uppercase;
@@ -199,6 +234,7 @@ label{
 .txtemail{
     font-family: "Prompt", Sans-serif;
     font-weight: 600;
+    font-size: 13px;
 }
 #letter{
     border: 1px solid white;
@@ -224,7 +260,7 @@ label{
 }
 .posts{
     font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
+    font-size: 80px;
     margin: 10px;
 }
 .blog{
@@ -247,12 +283,6 @@ label{
     font-family: 'Arial';
     font-size: 11px;
     color:#fff;
-}
-.logo2{
-    max-width: 180px;
-    max-height: 114px;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
 }
 .page-footer p, a{
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -295,12 +325,15 @@ label{
     font-family: Arial;
 }
 .i-social img{
-    background-color: #fff; 
-    width:2vw; 
-    border-radius: 100%; 
-    border: 0.5px solid #fff;
+    padding: 5px;
+    max-width:30px; 
+    border-radius: 50%; 
+    border: 1px solid #fff;
     margin-right: 5px;
     margin-bottom: 1em;
+}
+.i-social img:hover{
+    border: 1px solid #000;
 }
 .txt-news2 hr{
     background-color: #fff;
@@ -316,10 +349,42 @@ label{
     margin: 0em 0em 0em 0em;
 }
 
-.txt-news2 .button{
+.txt-news2 button{
     background-color: #fff; 
+    color: #000;
     padding: 1em; 
     margin-top: 2em;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+    border: 0;
+}
+.txt-news2 button:hover{
+    color: #fff;
+    background-color: #000;
+}
+.comment{
+    padding-bottom: 1em;
+}
+.comment h3, h4{
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    margin: 1em;
+    color: #fff;
+    text-align: center;
+}
+.comment span{
+    font-family:"Bebas Neue", cursive;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.comment p{
+    font-family: arial;
+    font-size: 13px;
+}
+.leave{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 #textspace{
     font-family:"Bebas Neue", Sans-serif;
@@ -348,4 +413,14 @@ label{
 
 a.team:hover{
     text-decoration: none;
+}
+/* ---------------shop------------------------- */
+#shop-box{
+    max-width: 95vw;
+}
+#shop-page{
+    padding-bottom: 3em;
+}
+.img-fill{
+    max-width: 1.5em;
 }
