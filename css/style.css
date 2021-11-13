@@ -572,3 +572,14 @@ figure:hover {
     -webkit-transform: scale(1.3);
 	transform: scale(1.1);
 }
+.hover-change-pic figure {
+	background-image: url(img/product2.png);
+}
+.hover-change-pic figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover-change-pic figure:hover img {
+	opacity: .5;
+}
