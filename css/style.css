@@ -464,19 +464,6 @@ a.team:hover{
 .img-fill{
     max-width: 2.25em;
 }
-.column{
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 1.5px;
-    margin-left: 2px;
-}
-.column:hover{
-    background-color: #FF521B;
-}
-/* #col-bt:active{
-    background-color:rgb(255, 0, 0);
-} */
 
 #row-box{
     margin-bottom: 2px;
