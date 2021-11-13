@@ -282,15 +282,52 @@ img {
     font-size: 35px;
     color: #fff;
 }
+.news1:link{
+    color: #fff;
+    text-decoration: none;
+}
 .uncate{
     font-family: 'Arial';
     font-size: 11px;
     color:#fff;
 }
-.page-footer p, a{
+.page-footer .white p, a{
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+}
+.page-footer .white p, a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.poly{
+    padding: 15px 90px 15px 20px;
+    position: absolute;
+    top: 19.85em;
+    /* bottom: 0px; */
+    left: 1.2em;
+    right: auto;
+    clip-path: polygon(0 0, 76% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(275.37deg, rgba(0, 0, 0, 0.39) 0%, #FF521B 98.91%);
+}
+time.updated{
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    padding-left: 15px;
+    line-height: 27px;
+    display: inline-block;
+    border-left: 2px solid #0a0a0a;
+    color: #fff;
+}
+.day:after{
+    content: "";
+    margin: 0 8px;
+    width: 13px;
+    height: 1px;
+    display: inline-block;
+    background: #c7c7c7;
+    vertical-align: middle;
 }
 
 /* teams------------------------------------------------------------------------------------ */
@@ -571,4 +608,14 @@ figure:hover {
 }
 .so1:hover .img-top {
     display: inline;
+.hover-change-pic figure {
+	background-image: url(img/product2.png);
+}
+.hover-change-pic figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover-change-pic figure:hover img {
+	opacity: .5;
 }
