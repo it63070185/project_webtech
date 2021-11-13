@@ -297,7 +297,7 @@ img {
     font-size: 13px;
 }
 .page-footer .white p, a:hover {
-    color: #fff;
+    color: #dd0000;
     text-decoration: none;
 }
 .poly{
@@ -474,12 +474,6 @@ a.team:hover{
 .column:hover{
     background-color: #FF521B;
 }
-.wrap{
-
-}
-/* #col-bt:active{
-    background-color:rgb(255, 0, 0);
-} */
 
 #row-box{
     margin-bottom: 2px;
@@ -568,7 +562,7 @@ a.team:hover{
     font-family: 'Arial';
     font-size:14px;
 }
-.color-full:hover, .text-product:hover{
+.color-full:hover, .font-product1:hover, .font-product3:hover, .text-product:hover{
     color:#FF521B;
 }
 figure {
@@ -627,4 +621,38 @@ figure:hover {
 }
 .logo-white{
     filter: contrast(0) brightness(200%);
+}
+.star-space{
+    margin-right: 2px;
+    font-size:13px;
+}
+.line-product{
+    width:100%; 
+    background-color:white;
+}
+.font-product1{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Bebas Neue,cursive;
+}
+.font-product2{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.font-product3{
+    font-family: Arial;
+    font-size: 13px;
+}
+.font-product4{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #9b9b9b;
+}
+.font-footer{
+    font-size: 13px;
+    font-family: Roboto,Sans-serif;
 }
