@@ -437,6 +437,9 @@ a.team:hover{
 .column:hover{
     background-color: #FF521B;
 }
+.wrap{
+
+}
 /* #col-bt:active{
     background-color:rgb(255, 0, 0);
 } */
@@ -494,6 +497,24 @@ a.team:hover{
     border:25px solid white;
     padding-bottom: 24.6px;
 }
+.frames3{
+    border:20px solid white;
+    padding-bottom: 24.6px;
+    padding-top: 25px;
+}
+.frames4{
+    border:25px solid white;
+    padding-bottom: 23.6px;
+}
+.frames5{
+    border:25px solid white;
+    padding-bottom: 8px;
+}
+.frames6{
+    border:20px solid white;
+    padding-bottom: 33px;
+    padding-top: 25px;
+}
 .color-full{
     color: #a3a3a3;
     letter-spacing: 1px;
@@ -534,4 +555,20 @@ figure:hover {
 .hoverpic figure:hover img{
     -webkit-transform: scale(1.3);
 	transform: scale(1.1);
+}
+.so1 {
+    min-width: 25px;
+    min-height: 35px;
+    position: relative;
+    display: inline-block;
+}
+.so1 .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.so1:hover .img-top {
+    display: inline;
 }
