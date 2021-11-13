@@ -625,3 +625,6 @@ figure:hover {
 .hover-change-pic figure:hover img {
 	opacity: .5;
 }
+.logo-white{
+    filter: contrast(0) brightness(200%);
+}
