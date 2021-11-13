@@ -488,12 +488,12 @@ a.team:hover{
 .list-icon{
     font-size: 25px;
 }
-#col-bt{
+/* #col-bt{
     padding: 0.75em 0em 0em 1em;
-}
+} */
 
 #col-bt-bt{
-    padding: 1.25em 0em 0em 1em;
+    padding: 0.5em 0em 0em 1em;
 }
 #bg-img1{
     background-color:white;
@@ -594,20 +594,26 @@ figure:hover {
 	transform: scale(1.1);
 }
 .so1 {
-    min-width: 25px;
-    min-height: 35px;
+    max-width: 100%;
+    margin-left: 10px;
+    /* width: 130px;
+    height: 195px; */
     position: relative;
     display: inline-block;
+    /* margin: 50px; */
 }
 .so1 .img-top {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
 }
 .so1:hover .img-top {
     display: inline;
+    /* max-width: 100%;
+    margin-left: 10px; */
+}
 .hover-change-pic figure {
 	background-image: url(img/product2.png);
 }
