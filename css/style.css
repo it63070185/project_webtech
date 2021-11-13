@@ -461,9 +461,7 @@ a.team:hover{
 #shop-page{
     padding-bottom: 3em;
 }
-.img-fill{
-    max-width: 2.25em;
-}
+
 .column{
     width: 8px;
     height: 8px;
@@ -655,4 +653,18 @@ figure:hover {
 .font-footer{
     font-size: 13px;
     font-family: Roboto,Sans-serif;
+.img-fill{
+    max-width: 50%;
+    position: relative;
+    display: inline-block;
+}
+.img-fill .img-top {
+    display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+}
+.img-fill:hover .img-top {
+    display: inline;
 }
