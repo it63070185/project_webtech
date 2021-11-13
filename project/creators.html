@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript">
 	window.addEventListener("resize", function() {
-		"use strict"; window.location.reload(); 
+		"use strict"; window.location.reload();
 	});
 
 
@@ -26,7 +26,7 @@
 		if (window.innerWidth > 992) {
 
 			document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
-				
+
 				everyitem.addEventListener('mouseover', function(e){
 
 					let el_link = this.querySelector('a[data-bs-toggle]');
@@ -36,24 +36,24 @@
 						el_link.classList.add('show');
 				 		nextEl.classList.add('show');
 					}
-					
+
 				});
 				everyitem.addEventListener('mouseleave', function(e){
 				 	let el_link = this.querySelector('a[data-bs-toggle]');
-					
+
 					if(el_link != null){
 						let nextEl = el_link.nextElementSibling;
 						el_link.classList.remove('show');
 				 		nextEl.classList.remove('show');
 					}
-					
+
 
 				})
 			});
 
 		}
 		// end if innerWidth
-	}); 
+	});
 
         window.addEventListener("resize", function () {
             "use strict"; window.location.reload();
@@ -170,8 +170,8 @@
             <div class="col-12 text-center" id="textspace">
                 <p>CREATORS</p>
             </div>
-            <div class="col-3 p-2">
-                <img src="../img/MintAuka-1.jpg" alt="">
+            <div class="col-3 p-2 hoverpic">
+                <figure><img src="../img/MintAuka-1.jpg" alt=""></figure>
                 <a href="https://www.twitch.tv/mintauka" class="team">
                     <div class="teambox my-3">TWITCH</div>
                 </a>
@@ -179,8 +179,8 @@
                     <div class="teambox my-3">FACEBOOK</div>
                 </a>
             </div>
-            <div class="col-3 p-2">
-                <img src="../img/BOOMBURAPA-scaled.jpg" alt="">
+            <div class="col-3 p-2 hoverpic">
+                <figure><img src="../img/BOOMBURAPA-scaled.jpg" alt=""></figure>
                 <a href="https://www.twitch.tv/boomburapa" class="team">
                     <div class="teambox my-3">TWITCH</div>
                 </a>
@@ -188,8 +188,8 @@
                     <div class="teambox my-3">FACEBOOK</div>
                 </a>
             </div>
-            <div class="col-3 p-2">
-                <img src="../img/nyamnyamnm-scaled.jpg" alt="">
+            <div class="col-3 p-2 hoverpic">
+                <figure><img src="../img/nyamnyamnm-scaled.jpg" alt=""></figure>
                 <a href="https://www.twitch.tv/nyamnyamnm" class="team">
                     <div class="teambox my-3">TWITCH</div>
                 </a>
@@ -197,8 +197,8 @@
                     <div class="teambox my-3">FACEBOOK</div>
                 <!-- </a> -->
             </div>
-            <div class="col-3 p-2">
-                <img src="../img/Voicezan-scaled.jpg" alt="">
+            <div class="col-3 p-2 hoverpic">
+                <figure><img src="../img/Voicezan-scaled.jpg" alt=""></figure>
                 <a href="https://www.twitch.tv/voicezan" class="team">
                     <div class="teambox my-3">TWITCH</div>
                 </a>
@@ -206,8 +206,8 @@
                     <div class="teambox my-3">FACEBOOK</div>
                 </a>
             </div>
-            <div class="col-3 p-2">
-                <img src="../img/Fixky.jpg" alt="">
+            <div class="col-3 p-2 hoverpic">
+                <figure><img src="../img/Fixky.jpg" alt=""></figure>
                 <a href="https://www.twitch.tv/fixky" class="team">
                     <div class="teambox my-3">TWITCH</div>
                 </a>
