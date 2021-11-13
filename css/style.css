@@ -514,8 +514,8 @@ a.team:hover{
     color:#FF521B;
 }
 figure {
-	width: 475px;
-	height: 257px;
+	height: auto;
+    max-width: 100%;
 	margin: 0;
 	padding: 0;
 	background: #fff;
