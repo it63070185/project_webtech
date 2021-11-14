@@ -625,7 +625,7 @@ figure:hover {
     font-size:13px;
 }
 .line-product{
-    width:100%; 
+    width:100%;
     background-color:white;
 }
 .font-product1{
@@ -668,4 +668,10 @@ figure:hover {
 }
 .img-fill:hover .img-top {
     display: inline;
+}
+#bg-img2{
+    background-color:white;
+    background-size: cover;
+    /* padding-left:0; */
+    /* background-size: 495px 600px; */
 }
