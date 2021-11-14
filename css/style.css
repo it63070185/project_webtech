@@ -558,12 +558,11 @@ a.team:hover{
     padding-bottom: 33px;
     padding-top: 25px;
 }
-
 .frames7{
-    border:10px solid white;
-}
+    border:15px solid white;
+    /* width: fit-content; */
 /*bg frame in shop product*/
-
+}
 .color-full{
     color: #a3a3a3;
     letter-spacing: 1px;
@@ -644,9 +643,19 @@ figure:hover {
     margin-right: 2px;
     font-size:13px;
 }
+
+
+                                        /* Product in shop */
 .line-product{
     width:100%;
     background-color:white;
+}
+.line-product-shop{
+    width:97%;
+    background-color:white;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 0%;
 }
 .font-product1{
     font-size: 20px;
@@ -689,6 +698,59 @@ figure:hover {
 .img-fill:hover .img-top {
     display: inline;
 }
+
 .padding-img1{
-    padding-left: 10%;
+    padding-bottom: 15%;
+    padding-top: 10%;
 }
+.padding-img2{
+    padding-left: 2%;
+}
+.padding-text1{
+    padding-left: 5%;
+    padding-top: 10%;
+    line-height: 1.3;
+}
+.font-product-shop1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Bebas Neue,cursive;
+}
+.font-product-shop2{
+    font-family: Bebas Neue,cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FF521B;
+    line-height: 0.2;
+}
+.font-product-shop3{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.font-product-shop4{
+    font-family: Bebas Neue,cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 6%;
+}
+.font-product-shop5{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #9b9b9b;
+    line-height: 0;
+}
+#button2{
+    background-color:#ffffff;
+    margin-top: 60px;
+    color: #000000;
+    font-size: 14px;
+    height: 7%;
+    font-family: Arial;
+}
+                                                /* END Product in shop */
