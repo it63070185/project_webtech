@@ -493,6 +493,11 @@ a.team:hover{
     /* padding-left:0; */
     /* background-size: 495px 600px; */
 }
+#bg-img2/*bg-product*/{
+    background-color:white;
+    max-width: 100%;
+    height: auto;
+}
 /* -----------shop-2--------------------------------- */
 #imgpro1{
     background-color: white;
@@ -544,6 +549,12 @@ a.team:hover{
     padding-bottom: 33px;
     padding-top: 25px;
 }
+
+.frames7{
+    border:10px solid white;
+}
+/*bg frame in shop product*/
+
 .color-full{
     color: #a3a3a3;
     letter-spacing: 1px;
@@ -669,9 +680,6 @@ figure:hover {
 .img-fill:hover .img-top {
     display: inline;
 }
-#bg-img2{
-    background-color:white;
-    background-size: cover;
-    /* padding-left:0; */
-    /* background-size: 495px 600px; */
+.padding-img1{
+    padding-left: 10%;
 }
