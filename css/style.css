@@ -83,9 +83,11 @@ img {
 }
 .imgpartner{                        /*---------css รูปpartner---------------*/
     border: 1px solid white;
-    float: left;
-    max-width:fit-content;
-   height:250px;
+    /* float: center; */
+    max-width:100%;
+    height: auto;
+    /* align-items: left; */
+   /* height:250px; */
 }
 #thaiawesome{
     width: 300px;
@@ -122,31 +124,30 @@ img {
     .box {
         grid-template-columns: auto;
     }
+    footer, .res-left{
+        text-align: left;
+    }
 }
 @media screen and (max-width:767px) {
 
     .box {
         grid-template-columns: auto;
     }
+    footer, .res-left{
+        text-align: left;
+    }
+
+}
+#res-left{
+    text-align: center;
 }
 
 #side{                                       /*--------- จัดให้ข้อความอยู่ทางขวาของรูป---------------*/
-    width: 70%;
-    float: right;
+    font-weight: 400;
     font-size: 13px;
+    font-family: "Prompt", Sans-serif;
 }
-#side2{
-    width: 70%;
-    float: right;
-    font-size: 13px;
-    margin-left: 85px;
-}
-#side3{
-    margin-left: 110px;
-    width: 70%;
-    float: right;
-    font-size: 13px;
-}
+
 .bigger{                                     /*--------- จัดหัวเรื่องข้อความให้ขนาดใหญ่กว่ารายละเอียด---------------*/
     font-family: "Bebas Neue", Sans-serif;
     font-size: 40px;
@@ -184,10 +185,18 @@ img {
     font-size: 13px;
     margin-bottom: 30px;
 }
+.pad-left{
+    padding-left:20px;
+}
 
 /* ----------------------------------------------เริ่มcssหน้า Contact us------------------------ */
 .contact{                               /*--------- จัดตัวอักษร ตรงส่วนcontact---------------*/
     font-family: "Prompt", Sans-serif;
+    font-size: 13px;
+}
+.partner-font{
+    font-family: "Prompt", Sans-serif;
+    font-weight: 400;
     font-size: 13px;
 }
 .font2{
