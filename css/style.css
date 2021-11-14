@@ -552,9 +552,9 @@ a.team:hover{
 
 .frames7{
     border:10px solid white;
-}
+    /* width: fit-content; */
 /*bg frame in shop product*/
-
+}
 .color-full{
     color: #a3a3a3;
     letter-spacing: 1px;
@@ -680,6 +680,8 @@ figure:hover {
 .img-fill:hover .img-top {
     display: inline;
 }
+
 .padding-img1{
-    padding-left: 10%;
+    padding-bottom: 15%;
+    padding-top: 10%;
 }
