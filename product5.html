@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL SENSE PROJECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript">
+
+        window.addEventListener("resize", function () {
+            "use strict"; window.location.reload();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
+
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
+
+                    everyitem.addEventListener('mouseover', function (e) {
+
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
+
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
+
+
+                    })
+                });
+
+            }
+            // end if innerWidth
+        });
+	// DOMContentLoaded  end
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/Full_Sense_logo.png" alt=""></a>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
+                            TEAMS
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="project/creators.html">Creators</a>
+                            <a class="dropdown-item" href="project/pubg.html">PUBG</a>
+                            <a class="dropdown-item" href="project/valorant.html">Valorant</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="partner.html">PARTNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="font1 m-4 mr-4" href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class=btn><i class="bi bi-heart"></i></button>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+</head>
+<body>
+<div class="container-fluid">
+        <div class="row">
+        <div class="col-md-7">
+            <div class="row  d-flex justify-content-center">
+                <img src="img/product5.png" width="500" height="500" class="img-fluid padding-img1">
+            </div>
+            <div class="row padding-img2">
+                <div class="col-3 pr-2">
+                    <img src="img/product5.png" id="bg-img2" class="frames7">
+                </div>
+            </div>
+        </div>
+            <div class="col-md-5 padding-text1">
+                <div class="font-product-shop1">
+                    <p>FULL SENSE MOUSEPAD 2021 (TYPE 2)</p>
+                </div>
+                <!-- ตัวอักษรราคาสีส้ม คลุมสีขาว -->
+                <div class="font-product-shop2">
+                    <p>฿450.00 - ฿650.00</p>
+                </div>
+                <hr class="line-product-shop">
+                <div class="font-product-shop3">
+                    <!-- ตัวอักษรพิเศษ'─' -->
+                    <p>✔ มี 4 ขนาด</p>
+                    <p>*สินค้าทุกอย่างเป็นสินค้าพรีออเดอร์ ( 10/10 ─ 24/10)</p>
+                </div>
+                <button id="button2" type="button" class="btn-lg btn-block rounded-0" style="height: 6%;"><b>OUT STOCK</b></button>
+
+                <div class="font-product-shop4">
+                    <p>TYPE</p>
+                </div>
+                <!-- ตุ่ม -->
+                <fieldset>
+                    <label>
+                      <input type="radio" name="radio-button" value="css" checked />
+                      <span>Speed</span>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="radio" name="radio-button" value="no" />
+                      <span>Control</span>
+                    </label>
+                  </fieldset>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="font-product-shop6">
+                            <p><b>Product total</b></p>
+                            <p><b>Option total</b></p>
+                            <p><b>Grand total</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="font-product-shop7">
+                            <p><b>฿0.00</b></p>
+                            <p><b>฿0.00</b></p>
+                            <p><b>฿0.00</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row padding-text2">
+                    <div class="col-md-2">
+                        <i class="bi bi-heart p-3 mr-2 border border-light "></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="font-product5">
+                            <p>ADD TO WISHLIST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="line-product-shop">
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="font-product4">
+                            <p>SKU:</p>
+                            <p>Categories:</p>
+                            <p>Tag:</p>
+                            <p>Share:</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="font-product-shop8">
+                            <p>D2300-3-2-4-1-2-1</p>
+                            <p style="margin-left: 2em;">Full Sense, Mouse Pad</p>
+                            <p style="margin-left: -1em;">IT, Life Style, Trend</p>
+                            <p class="i-social2">
+                                <a
+                                    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffullsense.gg%2Fwe-placed-2nd-in-valorant-champions-tour-2021-southeast-asia-stage-2-challengers-finals-tournament%2F&i=https%3A%2F%2Ffullsense.gg%2Fwp-content%2Fuploads%2F2021%2F07%2Fnews1.png">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com/intent/tweet?url=https://fullsense.gg/we-placed-2nd-in-valorant-champions-tour-2021-southeast-asia-stage-2-challengers-finals-tournament/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffullsense.gg%2Fwe-placed-2nd-in-valorant-champions-tour-2021-southeast-asia-stage-2-challengers-finals-tournament%2F">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a
+                                    href="https://www.pinterest.com/pin-builder/?url=https%3A%2F%2Ffullsense.gg%2Fproduct%2Ffullsense-jacket-jersey%2F&media=https%3A%2F%2Ffullsense.gg%2Fwp-content%2Fuploads%2F2021%2F07%2FJERSEY-FRONT.png&method=button">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<br><br><br>
+<hr class="line-product">
+
+    <!-- Footer -->
+            <footer class="page-footer pt-4 mr-2 ml-2 botom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 mb-5">
+                            <img class="logo2" src="img/logo2.png" alt="">
+                        </div>
+                        <br><br><br><br><br>
+                        <div class="col-md-3 text-left font-footer pl-5">
+                            <p >FULL SENSE Esports CO LTD</p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div class="col-md-3 mb-3 text-left">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                </div>
+                                <div class="col-sm-6 hi">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="white" href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="#!">About us</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="team.html">Teams</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 text-left ">
+                            <div class="row">
+                                <div class="col-sm-3 ">
+                                </div>
+                                <div class="col-sm-9 hi ">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="white" href="news.html">News</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="partner.html">Partner</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="contactus.html">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3  text-left">
+                            <img class="facebook" src="img/facebook.jpg" alt="" width="23" height="23">
+                            <a class="white" href="https://www.facebook.com/fullsensesports">FULL SENSE</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+</html>
