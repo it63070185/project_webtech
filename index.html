@@ -12,12 +12,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/logo2.png" sizes="32x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <script type="text/javascript">
       
 	window.addEventListener("resize", function() {
@@ -62,6 +70,7 @@
 	// DOMContentLoaded  end
 
 </script>
+
 </head>
 <body>
     <header class="header">
@@ -109,8 +118,9 @@
   </div>
 </nav>
     </header>
-    <section>
-      <div class="box-in">
+    <section class="sec2">
+    <div class="row">
+      <div class="col-12 box-in">
         <span class="text-slide">F</span>
         <span class="text-slide">U</span>
         <span class="text-slide">L</span>
@@ -119,14 +129,8 @@
         <span class="text-slide">E</span>
         <span class="text-slide">N</span>
         <span class="text-slide">S</span>
-        <span class="text-slide">E</span>
-
-        
-      </div>
-    </section>
-
-    <section>
-      <div class="row">
+        <span class="text-slide">E</span></div>
+<div class="row">
         <div class="col-6">
           <video width="750" height="430" controls>
           <source src="video/video-1.mp4" type="video/mp4">  
@@ -140,12 +144,110 @@
           <br> <a href="aboutus.html" class="ml-5 mt-3 btn_read " role="button"><span>READ MORE</span> <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
-    </section>
-    
-    <section>
-      <div class="row">
         
       </div>
     </section>
+
+    
+    
+    <section>
+    <div class="text-center mb-5" id="textspace" style="font-size:9em; font-weight:500;">OUR GAMING HOUSE</div>
+    
+    <div class="container">
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+          <img src="img/sli1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli10.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli11.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli12.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli13.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/sli14.jpg" />
+        </div>
+          </div>
+           <div class="swiper-pagination"></div>
+      </div></div>
+
+      <div class="row">
+      <div class="col-12 text-center">
+      <h2 class="pl-5 pt-4 pb-3" id="txt-shop">SHOP<span class="dot">.</span></h2></div>
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </section>
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 120,
+          modifier: 1,
+          slideShadows: true,
+        },
+        
+      });
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+  $('.slider').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  centerMode: true,
+  centerPadding: '100px'
+});
+</script>
 </body>
 </html>

@@ -39,7 +39,7 @@ section{
     background: url(../img/banner.png);
     background-position: center;
     background-size: cover;
-    
+    margin-bottom: 10%;
 }
 .bi-heart{
     color: white;
@@ -48,13 +48,19 @@ section{
 .bi-heart:hover{
     color: #fd5015;
 }
-#txt-in{                              /*---------textคำว่า PARTNERS---------------*/
+#txt-in{                              /*---------textคำว่า about--------------*/
     font-size: 80px;
     font-family: "Bebas Neue", Sans-serif;
     letter-spacing: 5px;
     
 }
-#txt-inpara{                              /*---------textคำว่า PARTNERS---------------*/
+#txt-shop{                              /*---------textคำว่า shop---------------*/
+    font-size: 60px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 5px;
+    
+}
+#txt-inpara{                              /*---------textคำว่า para about---------------*/
     font-size: 16px;
     font-family: "Prompt", Sans-serif;
     color: #fff;
@@ -64,6 +70,34 @@ section{
     
 }
 
+
+.sec2{
+    padding-bottom: 350px;
+    background-size: 650px;
+    background-image: url(../img/bg-1.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 40%;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: initial;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 
 .line-orange {
     background: linear-gradient(to right, #fd5015, black);
