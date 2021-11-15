@@ -18,9 +18,19 @@ body {
     color: white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.font1 :hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 section{
     margin-bottom: 7%;
+    overflow: hidden;
 }
 /* indexbg */
 .box-in {
@@ -29,31 +39,64 @@ section{
     background: url(../img/banner.png);
     background-position: center;
     background-size: cover;
+    
 }
-
+.bi-heart{
+    color: white;
+    transition: 0.3s;
+}
+.bi-heart:hover{
+    color: #fd5015;
+}
 #txt-in{                              /*---------textคำว่า PARTNERS---------------*/
     font-size: 80px;
     font-family: "Bebas Neue", Sans-serif;
     letter-spacing: 5px;
+    
 }
 #txt-inpara{                              /*---------textคำว่า PARTNERS---------------*/
     font-size: 16px;
     font-family: "Prompt", Sans-serif;
     color: #fff;
     font-weight: 300;
+    letter-spacing: 1px;
     line-height: 23px;
-}
-a {
-    text-decoration: none;
+    
 }
 
+
+.line-orange {
+    background: linear-gradient(to right, #fd5015, black);
+    width: 340px;
+  height: 5px;
+
+  display:inline-block;
+  }
+
+.btn_read {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-weight: 550;
+    padding: 1.3em;
+    color: white;
+    border: 2px solid white;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.btn_read:hover{
+    border: 2px solid #fd5015;
+    color: white;
+}
 
 .navbar-nav > .active > a {
     color: #fd5015;
     text-decoration: underline;
+    transition: 0.5s;
   }
   .nav-item > a:hover {
     color: #fd5015;
+    text-decoration: underline;
   }
 
 .navbar-brand img{
@@ -347,6 +390,41 @@ time.updated{
 #teams .home{
     color: #fff;
 }
+.banner-wrapper-infor {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-right: 30px;
+}
+.banner-wrapper-infor .info{
+    background: linear-gradient(275.37deg, rgba(0, 0, 0, 0.39) 0%, #FF521B 98.91%);
+    clip-path: polygon(0 0, 76% 0, 100% 100%, 0% 100%);
+    max-width: 410px;
+    padding: 20px 40px;
+}
+h3{
+    margin: 0px 0px 0px;
+}
+.info{
+    margin: 0;
+    font-size: 32px;
+    /* text-transform: uppercase; */
+    color: #fff;
+
+    font-family: Bebas Neue,cursive;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin-block-start: 1em;
+    margin-block-end: 4.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.info span{
+    font-family: Arial;
+    font-size: 13px;
+    margin-top: 0px;
+}
 /* news-1------------------------------------------------------------------------------------------------------- */
 .img-title{
     padding: 35vw;
@@ -383,6 +461,19 @@ time.updated{
 }
 .i-social img:hover{
     border: 1px solid #000;
+}
+.i-social2{
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    margin-left: 1.5em;
+}
+.fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-pinterest{
+    color: #fff;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-pinterest:hover {
+    color: #FF521B;
 }
 .txt-news2 hr{
     background-color: #fff;
@@ -727,6 +818,20 @@ figure:hover {
     line-height: 1.7;
     color: #9b9b9b;
 }
+.font-product5{
+    font-family: Bebas Neue,cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    margin-left: -25px;
+    color: #fff;
+}
+.font-product6{
+    font-family: Arial;
+    font-size: 13px;
+    text-align: left;
+}
 .font-footer{
     font-size: 13px;
     font-family: Roboto,Sans-serif;
@@ -758,6 +863,9 @@ figure:hover {
     padding-left: 5%;
     padding-top: 10%;
     line-height: 1.3;
+}
+.padding-text2{
+    padding-top: 55px;
 }
 .font-product-shop1{
     font-size: 45px;
@@ -793,12 +901,83 @@ figure:hover {
     color: #9b9b9b;
     line-height: 0;
 }
+.font-product-shop6{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 30px;
+    color: #ffffff;
+}
+.font-product-shop7{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 30px;
+    text-align: right;
+    color: #ffffff;
+}
+.font-product-shop8{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #ffffff;
+}
 #button2{
     background-color:#ffffff;
     margin-top: 60px;
     color: #000000;
     font-size: 14px;
-    height: 7%;
+    height: 4%;
     font-family: Arial;
 }
+label > input[type="radio"] {
+    display: none;
+  }
+  label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+  label > input[type="radio"]:checked + * {
+    color: #fff;
+  }
+  label > input[type="radio"]:checked + *::before {
+    background: radial-gradient(#FF521B 0%, #FF521B 40%, transparent 50%, transparent);
+    border-color: #FF521B;
+  }
+
+  /* basic layout */
+  fieldset {
+    margin-left: -16px;
+    max-width: 400px;
+  }
+  label > input[type="radio"] + * {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.button3{
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: Arial;
+}
+.selection1{
+    color: #ffffff;
+    background-color: #000;
+}
+.selection2{
+    padding-bottom: 18px;
+}
                                                 /* END Product in shop */
+
+
