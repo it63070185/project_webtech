@@ -9,51 +9,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript">
-	window.addEventListener("resize", function() {
-		"use strict"; window.location.reload();
-	});
+        window.addEventListener("resize", function () {
+            "use strict"; window.location.reload();
+        });
 
 
-	document.addEventListener("DOMContentLoaded", function(){
+        document.addEventListener("DOMContentLoaded", function () {
 
-		// make it as accordion for smaller screens
-		if (window.innerWidth > 992) {
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
 
-			document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
 
-				everyitem.addEventListener('mouseover', function(e){
+                    everyitem.addEventListener('mouseover', function (e) {
 
-					let el_link = this.querySelector('a[data-bs-toggle]');
+                        let el_link = this.querySelector('a[data-bs-toggle]');
 
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.add('show');
-				 		nextEl.classList.add('show');
-					}
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
 
-				});
-				everyitem.addEventListener('mouseleave', function(e){
-				 	let el_link = this.querySelector('a[data-bs-toggle]');
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
 
-					if(el_link != null){
-						let nextEl = el_link.nextElementSibling;
-						el_link.classList.remove('show');
-				 		nextEl.classList.remove('show');
-					}
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
 
 
-				})
-			});
+                    })
+                });
 
-		}
-		// end if innerWidth
-	});
+            }
+            // end if innerWidth
+        });
 
         window.addEventListener("resize", function () {
             "use strict"; window.location.reload();
@@ -118,7 +123,7 @@
                         <a class="font1 m-4 mr-4" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="font1 m-4 mr-4 dropdown-toggle" href="team.html" data-bs-toggle="dropdown">
+                        <a class="font1 m-4 mr-4 dropdown-toggle" href="../team.html" data-bs-toggle="dropdown">
                             TEAMS
                         </a>
                         <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
@@ -166,7 +171,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-12 text-center" id="textspace">
@@ -175,9 +180,14 @@
                 <div class="col-3 p-2 hoverpic">
                     <figure>
                         <img src="../img/MintAuka-1.jpg" alt="">
-                        
+
                     </figure>
-                    
+                    <div class="banner-wrapper-infor">
+                        <div class="info">
+                            <h3>MINTAUKA</h3>
+                            <span>Streamer</span>
+                        </div>
+                    </div>
                     <a href="https://www.twitch.tv/mintauka" class="team">
                         <div class="teambox my-3">TWITCH</div>
                     </a>
@@ -187,6 +197,12 @@
                 </div>
                 <div class="col-3 p-2 hoverpic">
                     <figure><img src="../img/BOOMBURAPA-scaled.jpg" alt=""></figure>
+                    <div class="banner-wrapper-infor">
+                        <div class="info">
+                            <h3>BOOMBURAPA</h3>
+                            <span>Streamer</span>
+                        </div>
+                    </div>
                     <a href="https://www.twitch.tv/boomburapa" class="team">
                         <div class="teambox my-3">TWITCH</div>
                     </a>
@@ -196,15 +212,27 @@
                 </div>
                 <div class="col-3 p-2 hoverpic">
                     <figure><img src="../img/nyamnyamnm-scaled.jpg" alt=""></figure>
+                    <div class="banner-wrapper-infor">
+                        <div class="info">
+                            <h3>NYAMNYAMNM</h3>
+                            <span>Streamer</span>
+                        </div>
+                    </div>
                     <a href="https://www.twitch.tv/nyamnyamnm" class="team">
                         <div class="teambox my-3">TWITCH</div>
                     </a>
                     <!-- <a href=""> -->
-                        <div class="teambox my-3">FACEBOOK</div>
+                    <div class="teambox my-3">FACEBOOK</div>
                     <!-- </a> -->
                 </div>
                 <div class="col-3 p-2 hoverpic">
                     <figure><img src="../img/Voicezan-scaled.jpg" alt=""></figure>
+                    <div class="banner-wrapper-infor">
+                        <div class="info">
+                            <h3>VOICEZAN</h3>
+                            <span>Streamer</span>
+                        </div>
+                    </div>
                     <a href="https://www.twitch.tv/voicezan" class="team">
                         <div class="teambox my-3">TWITCH</div>
                     </a>
@@ -214,11 +242,17 @@
                 </div>
                 <div class="col-3 p-2 hoverpic">
                     <figure><img src="../img/Fixky.jpg" alt=""></figure>
+                    <div class="banner-wrapper-infor">
+                        <div class="info">
+                            <h3>FIXKY</h3>
+                            <span>Streamer</span>
+                        </div>
+                    </div>
                     <a href="https://www.twitch.tv/fixky" class="team">
                         <div class="teambox my-3">TWITCH</div>
                     </a>
                     <!-- <a href=""> -->
-                        <div class="teambox my-3">FACEBOOK</div>
+                    <div class="teambox my-3">FACEBOOK</div>
                     <!-- </a> -->
                 </div>
             </div><br><br>
@@ -226,11 +260,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 p-1">
-    
+
                     <a href="creators.html"><img src="project/pic/creators.png" alt=""></a>
-    
+
                 </div>
-    
+
                 <div class="col-4 p-1">
                     <a href="pubg.html"><img src="project/pic/pubg.jpg" alt=""></a>
                 </div>
@@ -240,63 +274,63 @@
             </div><br>
         </div>
 
-       <!-- Footer -->
-    <footer class="page-footer pt-4 mr-2 ml-2 botom">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 mb-5">
-                    <img class="logo2" src="pic/logo2.png" alt="">
-                </div>
-                <br><br><br><br><br>
-                <div class="col-md-3 text-center font-footer">
-                    <p>FULL SENSE Esports CO LTD</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-3 mb-3 text-left">
-                    <div class="row">
-                        <div class="col-sm-7">
-                        </div>
-                        <div class="col-sm-5 hi">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="white" href="../index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="#!">About us</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="../team.html">Teams</a>
-                                </li>
-                            </ul>
+        <!-- Footer -->
+        <footer class="page-footer pt-4 mr-2 ml-2 botom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        <img class="logo2" src="pic/logo2.png" alt="">
+                    </div>
+                    <br><br><br><br><br>
+                    <div class="col-md-3 text-center font-footer">
+                        <p>FULL SENSE Esports CO LTD</p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-3 text-left">
+                        <div class="row">
+                            <div class="col-sm-7">
+                            </div>
+                            <div class="col-sm-5 hi">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="white" href="../index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="#!">About us</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="../team.html">Teams</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 mb-3 text-left ">
-                    <div class="row">
-                        <div class="col-sm-3 ">
-                        </div>
-                        <div class="col-sm-9 hi">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="white" href="../news.html">News</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="../partner.html">Partner</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="../contactus.html">Contact us</a>
-                                </li>
-                            </ul>
+                    <div class="col-md-3 mb-3 text-left ">
+                        <div class="row">
+                            <div class="col-sm-3 ">
+                            </div>
+                            <div class="col-sm-9 hi">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="white" href="../news.html">News</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="../partner.html">Partner</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="../contactus.html">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 text-center ">
-                    <img class="facebook" src="pic/facebook.jpg" alt="" width="23" height="23">
-                    <a class="white" href="https://www.facebook.com/fullsensesports">FULL SENSE</a>
+                    <div class="col-md-3 text-center ">
+                        <img class="facebook" src="pic/facebook.jpg" alt="" width="23" height="23">
+                        <a class="white" href="https://www.facebook.com/fullsensesports">FULL SENSE</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
