@@ -41,12 +41,35 @@ section{
     font-family: "Prompt", Sans-serif;
     color: #fff;
     font-weight: 300;
+    letter-spacing: 1px;
     line-height: 23px;
 }
 a {
     text-decoration: none;
 }
+.line-orange {
+    background: linear-gradient(to right, #fd5015, black);
+    width: 340px;
+  height: 5px;
 
+  display:inline-block;
+  }
+
+.btn_read {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-weight: 550;
+    padding: 1.3em;
+    color: white;
+    border: 2px solid white;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.btn_read:hover{
+    border: 2px solid #fd5015;
+    color: white;
+}
 
 .navbar-nav > .active > a {
     color: #fd5015;
