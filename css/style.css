@@ -18,9 +18,19 @@ body {
     color: white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.font1 :hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 section{
     margin-bottom: 7%;
+    overflow: hidden;
 }
 /* indexbg */
 .box-in {
@@ -29,12 +39,20 @@ section{
     background: url(../img/banner.png);
     background-position: center;
     background-size: cover;
+    
 }
-
+.bi-heart{
+    color: white;
+    transition: 0.3s;
+}
+.bi-heart:hover{
+    color: #fd5015;
+}
 #txt-in{                              /*---------textคำว่า PARTNERS---------------*/
     font-size: 80px;
     font-family: "Bebas Neue", Sans-serif;
     letter-spacing: 5px;
+    
 }
 #txt-inpara{                              /*---------textคำว่า PARTNERS---------------*/
     font-size: 16px;
@@ -43,10 +61,10 @@ section{
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 23px;
+    
 }
-a {
-    text-decoration: none;
-}
+
+
 .line-orange {
     background: linear-gradient(to right, #fd5015, black);
     width: 340px;
@@ -74,9 +92,11 @@ a {
 .navbar-nav > .active > a {
     color: #fd5015;
     text-decoration: underline;
+    transition: 0.5s;
   }
   .nav-item > a:hover {
     color: #fd5015;
+    text-decoration: underline;
   }
 
 .navbar-brand img{
