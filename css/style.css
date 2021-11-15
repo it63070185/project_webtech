@@ -70,7 +70,16 @@ section{
     
 }
 
+.widpic{
+    width: 50%;
+}
 
+#bg-img4-widpic{
+    background-color:white;
+    background-size: cover;
+    max-width: 350px;
+    height: auto;
+}
 .sec2{
     padding-bottom: 350px;
     background-size: 650px;
