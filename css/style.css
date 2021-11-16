@@ -41,6 +41,17 @@ section{
     background-size: cover;
     margin-bottom: 10%;
 }
+.news-in{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    color: #fff;
+}
+.news-in:hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    color: #fff;
+}
+
 .bi-heart{
     color: white;
     transition: 0.3s;
@@ -69,16 +80,46 @@ section{
     line-height: 23px;
     
 }
-
-.widpic{
-    width: 50%;
+.detail{
+    
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.detail2{
+    width: 100%;
+}
+ul {
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+  }
+.slick-dots li.slick-active button::before{
+    content: "-";
+    color: #fd5015;
+    opacity: 1;
 }
 
-#bg-img4-widpic{
-    background-color:white;
-    background-size: cover;
-    max-width: 350px;
-    height: auto;
+.slick-dots li button::before{
+    content: "-";
+    font-weight: 300;
+    font-size: 60px;
+    color: #424242;
+    opacity: 1;
+}
+
+.sec3{
+    padding-bottom: 60px;
+}
+.sec4{
+    padding-bottom: 60px;
+    background-size: 650px;
+    background-image: url(../img/bg-2.png);
+    background-repeat: no-repeat;
+    background-position-x: -15%;
+    background-position-y: -50%;
 }
 .sec2{
     padding-bottom: 350px;
@@ -1023,4 +1064,44 @@ label > input[type="radio"] {
 }
                                                 /* END Product in shop */
 
-
+/* news index */
+  
+.wrapper a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+.wrapper a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.wrapper a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FF521B;
+    transition: all .35s;
+  }
+  
+.wrapper a:hover{
+    color: #fff;
+  }
+  
+.wrapper a:hover:after{
+    width: 100%;
+  }
