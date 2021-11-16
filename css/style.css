@@ -593,6 +593,11 @@ img {
     font-size: 35px;
     color: #fff;
 }
+.news1:hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #fff;
+}
 .news1:link{
     color: #fff;
     text-decoration: none;
